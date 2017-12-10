@@ -6,7 +6,7 @@ using TechJobs.Models;
 
 namespace TechJobs.ViewModels
 {
-    public class NewJobViewModel
+    public class NewJobViewModel : BaseViewModel
     {
         [Required]
         public string Name { get; set; }
@@ -16,7 +16,7 @@ namespace TechJobs.ViewModels
         public int EmployerID { get; set; }
 
         [Required]
-        public int LocationID { get; set; }
+        public int LocationsID { get; set; }
 
         [Required]
         public int CoreCompetenciesID { get; set; }
